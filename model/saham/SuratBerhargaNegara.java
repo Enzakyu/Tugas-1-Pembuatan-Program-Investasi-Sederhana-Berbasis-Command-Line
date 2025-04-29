@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class SuratBerhargaNegara {
     private String nama;
-    private double bunga; // dalam persen
-    private int jangkaWaktu; // dalam bulan
+    private double bunga;
+    private int jangkaWaktu;
     private Date jatuhTempo;
     private double kuotaNasional;
 
@@ -16,24 +16,9 @@ public class SuratBerhargaNegara {
         this.jatuhTempo = jatuhTempo;
         this.kuotaNasional = kuotaNasional;
     }
-
-    // Getter dan Setter
-    public String getNama() {
-        return nama;
-    }
-
     public double getBunga() {
         return bunga;
     }
-
-    public int getJangkaWaktu() {
-        return jangkaWaktu;
-    }
-
-    public Date getJatuhTempo() {
-        return jatuhTempo;
-    }
-
     public double getKuotaNasional() {
         return kuotaNasional;
     }
@@ -47,4 +32,5 @@ public class SuratBerhargaNegara {
         return String.format("%s - Bunga: %.2f%%, Jangka Waktu: %d bulan, Jatuh Tempo: %s, Kuota: Rp%,.2f",
                 nama, bunga, jangkaWaktu, jatuhTempo.toString(), kuotaNasional);
     }
+}
 
